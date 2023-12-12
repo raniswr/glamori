@@ -1,0 +1,57 @@
+name: glamori
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+
+  extended_image: ^8.2.0
+
+dev_dependencies:
+  flutter_flavorizr: ^2.2.1
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+        - asset: fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lotties/
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+      ios:
+
+  flavors:
+    app_release:
+      app:
+        name: "Glamori"
+      android:
+        applicationId: "com.evetech.glamori"
+      ios:
+        bundleId: "com.evetech.glamori"
+
+    app_staging:
+      app:
+        name: "Glamori"
+      android:
+        applicationId: "com.evetech.glamori.staging"
+      ios:
+        bundleId: "com.evetech.glamori.staging"
